@@ -11,7 +11,7 @@ html body {
 
 input:focus,
 textarea:focus {
-    outline: 0;
+    outline: 0 !important;
 }
 
 
@@ -153,7 +153,7 @@ section.content .menu {
     background-color: #6a6a6a;
     color: #f0f0f0;
     padding-bottom: 31px;
-
+    width: 20%;
 }
 
 .menu nav {
@@ -186,4 +186,51 @@ section.content .menu {
     color: #f0f0f0;
     font-weight: normal;
 
+}
+
+
+section.content .cadastro{
+    width: 80%;
+    padding: 20px 2%;
+    background-color: #f0f0f0;
+}
+.cadastro h2{
+    font-size: 26px;
+}
+
+.cadastro .form-container{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.form-container label{
+    font-size:16px;
+    padding: 4px 0;
+    display: block;
+    margin-top: 15px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container textarea{
+    width: 100%;
+    border: 0;
+    height: 26px;
+    margin-top: 5px;
+    border-bottom: 1px solid #6a6a6a;
+    color: #1e1e1e;
+    padding-left: 4px;
+    background-color: transparent;
+}
+
+.form-container textarea{
+    resize: none;
+    height: 60px;
+}
+.form-container h2{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-top: 6px;
+    border-top: 4px solid #1e1e1e;
 }
