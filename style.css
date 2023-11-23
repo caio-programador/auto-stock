@@ -10,7 +10,8 @@ html body {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: 0 !important;
 }
 
@@ -149,7 +150,7 @@ section.content {
 
 
 section.content .menu {
-    padding: 20px 2%;
+    padding: 20px 0;
     background-color: #6a6a6a;
     color: #f0f0f0;
     padding-bottom: 31px;
@@ -163,7 +164,7 @@ section.content .menu {
 
 .menu nav h2 {
     font-size: 14px;
-    margin: 15px 0;
+    margin: 15px 10px;
 }
 
 .menu nav ul {
@@ -171,7 +172,7 @@ section.content .menu {
 }
 
 .menu nav ul li {
-    margin: 10px 0;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -189,31 +190,34 @@ section.content .menu {
 }
 
 
-section.content .cadastro{
+section.content .cadastro {
     width: 80%;
     padding: 20px 2%;
     background-color: #f0f0f0;
 }
-.cadastro h2{
+
+.cadastro h2 {
     font-size: 26px;
 }
 
-.cadastro .form-container{
+.cadastro .form-container {
     margin-top: 15px;
     width: 100%;
 }
 
-.form-container label{
-    font-size:16px;
-    padding: 4px 0;
+.form-container label {
+    font-size: 14px;
     display: block;
     margin-top: 15px;
+    font-weight: 300;
 }
 
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container input[type="date"],
-.form-container textarea{
+.form-container input[type="number"],
+.form-container select,
+.form-container textarea {
     width: 100%;
     border: 0;
     height: 26px;
@@ -224,13 +228,35 @@ section.content .cadastro{
     background-color: transparent;
 }
 
-.form-container textarea{
+.form-container textarea {
     resize: none;
-    height: 60px;
+    height: 52px;
 }
-.form-container h2{
+
+.botao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.form-container input[type="submit"] {
+    font-size: 18px;
+    border: 0;
+    background-color: #333333;
+    color: #f0f0f0;
+    padding: 6px;
+    width: 120px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.form-container h2 {
     font-size: 20px;
     margin-top: 30px;
     padding-top: 6px;
     border-top: 4px solid #1e1e1e;
+}
+
+section.content .menu nav ul li.selected {
+    background-color: #333333;
 }

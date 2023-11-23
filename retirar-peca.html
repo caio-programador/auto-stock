@@ -30,7 +30,7 @@
                 <h2>GERENCIAMENTO</h2>
                 <ul>
                     <li><img src="images/lista.png"> <a href="">Gernciar Estoque</a></li>
-                    <li class="selected"><img src="images/lista.png"> <a href="">Gerenciar Serviços</a></li>
+                    <li><img src="images/lista.png"> <a href="">Gerenciar Serviços</a></li>
                     <li><img src="images/lista.png"> <a href="">Categorias</a></li>
                 </ul>
             </nav>
@@ -38,7 +38,7 @@
                 <h2>MOVIMENTAÇÃO</h2>
                 <ul>
                     <li><img src="images/lista.png"> <a href="">Orçamentos</a></li>
-                    <li><img src="images/lista.png"> <a href="">Saídas de Estoque</a></li>
+                    <li class="selected"><img src="images/lista.png"> <a href="">Saídas de Estoque</a></li>
                 </ul>
             </nav>
             <nav>
@@ -54,30 +54,21 @@
             <nav></nav>
         </div>
         <div class="cadastro">
-            <h2>Cadastro de Serviço</h2>
+            <h2>Registrar saídas de Estoque</h2>
             <div class="form-container">
                 <form action="">
-                    <label for="">Nome do veículo:</label>
-                    <input type="text" name="veículo">
-                    <label for="">Descrição breve do serviço:</label>
-                    <textarea name="Descrição"></textarea>
-                    <label for="">Orçamento previsto:</label>
-                    <input type="text" name="orcamento">
-                    <label for="">Data de emissão do serviço: </label>
-                    <input type="date" name="data" id="">
-                    <label for="">Data de entrega: </label>
-                    <input type="date" name="data" id="">
-                    <h2>Dados do cliente: </h2>
-                    <label for="">Nome do cliente: </label>
-                    <input type="text" name="nomeCliente" id="">
-                    <label for="">Telefone: </label>
-                    <input type="text" name="telefone" id="">
-                    <label for="">E-mail do cliente:</label>
-                    <input type="email" name="email" id="">
+                    <label for="">Nome da peça:</label>
+                    <input type="text" name="nomePeca">
+                    <label>Quantidade:</label>
+                    <input type="number" name="qtdPecas">
+                    <label for="">Serviço:</label>
+                    <select name="servico" id="">
+                        <option value="">Lorem ipsum</option>
+                        <option value="">Dolor Sit Amet</option>
+                    </select>
                     <div class="botao">
-                        <input type="submit" value="Cadastrar">
+                        <input type="submit" value="Retirar">
                     </div>
-
                 </form>
             </div>
         </div>
