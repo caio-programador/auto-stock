@@ -7,9 +7,6 @@
 
 html body {
     height: 100%;
-    background: url("images/fundo.jpg");
-    background-position: center;
-    background-size: 110%;
 }
 
 input:focus,
@@ -18,10 +15,12 @@ textarea:focus {
 }
 
 
+/* Init of login page */
+
 .blur {
     position: absolute;
     z-index: 2;
-    background-color: #F28506;
+    background-color: #FEB900;
     opacity: 0.6;
     width: 100%;
     height: 100%;
@@ -49,7 +48,7 @@ textarea:focus {
 .welcome h2 {
     font-size: 22px;
     font-weight: 400;
-    color: #F28506;
+    color: #FEB900;
 }
 
 .login input {
@@ -66,7 +65,7 @@ textarea:focus {
 .login p {
     font-size: 15px;
     padding: 10px 0 2px 0;
-    color: #F28506;
+    color: #FEB900;
 }
 
 .login form {
@@ -88,7 +87,103 @@ textarea:focus {
     border: 0;
     padding: 5px 0;
     margin-top: 15px;
-    background-color: #F28506;
+    background-color: #FEB900;
     color: #1e1e1e;
     border-radius: 5%;
+}
+
+/* End of login page */
+
+
+/* Init of cadastrar-servico page */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2px 2%;
+    background-color: #7d7c7c;
+    align-items: center;
+}
+
+header .logo {
+    width: 50%;
+}
+
+header .logo img {
+    width: 180px;
+}
+
+header .user {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: left;
+    align-items: center;
+    color: #f0f0f0;
+}
+
+header .user .image img {
+    width: 55px;
+}
+
+header .user .logado {
+    text-align: center;
+    margin-right: 8px;
+}
+
+header .user .logado p {
+    font-size: 14px;
+}
+
+header .user .logado h2 {
+    font-size: 15px;
+}
+
+
+section.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+section.content .menu {
+    padding: 20px 2%;
+    background-color: #6a6a6a;
+    color: #f0f0f0;
+    padding-bottom: 31px;
+
+}
+
+.menu nav {
+    margin: 20px 0;
+    border-top: 2px solid #f0f0f0;
+}
+
+.menu nav h2 {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.menu nav ul {
+    list-style-type: none;
+}
+
+.menu nav ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu nav ul li img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: normal;
+
 }
